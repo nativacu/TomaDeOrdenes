@@ -28,7 +28,7 @@
         android:title="@string/consultar_clientes"
         android:color="@color/colorWhite"
         android:state_checked="true"
-        app:showAsAction="always|withText"
+        app:showAsAction="ifRoom|withText"
         android:enabled="true"
         android:icon="@drawable/ic_assignment_ind_black_24dp"
         />
@@ -38,7 +38,7 @@
         android:title="@string/productos"
         android:color="@color/colorWhite"
         android:state_checked="true"
-        app:showAsAction="always|withText"
+        app:showAsAction="ifRoom|withText"
         android:enabled="true"
         android:icon="@drawable/ic_local_shipping_black_24dp"
 
