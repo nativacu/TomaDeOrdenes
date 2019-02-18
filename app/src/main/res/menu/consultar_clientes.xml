@@ -7,7 +7,7 @@
         android:title=""
         app:showAsAction="always"
         android:icon="@drawable/ic_action_name"
-        app:theme="@style/MyActionBarTheme"
+        app:theme="@style/AppTheme"
         app:itemIconTint="@color/colorWhite"
         />
 </menu>
