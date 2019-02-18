@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TomaDeOrdenes</string>
+    <string name="title_activity_consultar_clientes">ConsultarClientes</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="resumen">Resumen</string>
+    <string name="ordenes">Ordenes</string>
+    <string name="consultar_clientes">Clientes</string>
+    <string name="productos">Productos</string>
+</resources>
