@@ -12,4 +12,12 @@
     <string name="consultar_clientes">Clientes</string>
     <string name="productos">Productos</string>
     <string name="ranchera">Ranchera</string>
+    <string name="search_clientes">Buscar cliente</string>
+    <string-array name="test_clientes">
+        <item>user.test123@gmail.com</item>
+        <item>raul_arturo798@gmail.com</item>
+        <item>naticavu@outlook.com</item>
+        <item>testuser@email.com</item>
+        <item>testuser2@email.com</item>
+    </string-array>
 </resources>

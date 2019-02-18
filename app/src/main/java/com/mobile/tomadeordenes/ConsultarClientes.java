@@ -15,6 +15,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 
 public class ConsultarClientes extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -34,6 +36,12 @@ public class ConsultarClientes extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        String[] clientes = getResources().getStringArray(R.array.test_clientes);
+
+        AutoCompleteTextView editText = findViewById(R.id.search_cliente);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, clientes);
+        editText.setAdapter(adapter);
     }
 
     @Override
@@ -51,8 +59,6 @@ public class ConsultarClientes extends AppCompatActivity
         getMenuInflater().inflate(R.menu.consultar_clientes, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
-
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
