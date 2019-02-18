@@ -6,7 +6,7 @@
         android:id="@+id/helpButton"
         android:title=""
         app:showAsAction="always"
-        android:icon="@drawable/faq_round"
+        android:icon="@drawable/ic_action_name"
         app:theme="@style/MyActionBarTheme"
         app:itemIconTint="@color/colorWhite"
         />
