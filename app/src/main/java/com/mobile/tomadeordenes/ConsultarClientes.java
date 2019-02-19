@@ -93,4 +93,9 @@ public class ConsultarClientes extends AppCompatActivity
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void onCancelButtonPressed(View view) {
+        Intent dashboardIntent = new Intent(this, MainActivity.class);
+        startActivity(dashboardIntent);
+    }
 }
