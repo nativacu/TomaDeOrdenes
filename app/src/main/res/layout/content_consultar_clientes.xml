@@ -28,7 +28,8 @@
         app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/circle_content"/>
 
     <ImageView
         android:id="@+id/first_circle2"
@@ -49,7 +50,8 @@
         app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/circle_content"/>
 
     <ImageView
         android:id="@+id/first_circle3"
@@ -70,7 +72,8 @@
         app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/circle_content"/>
 
     <ImageView
         android:id="@+id/second_circle"
@@ -91,7 +94,8 @@
         app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/circle_content"/>
 
     <TableRow
         android:id="@+id/first_row"
@@ -108,7 +112,7 @@
         app:layout_constraintEnd_toStartOf="@+id/second_circle"
         app:layout_constraintStart_toEndOf="@+id/first_circle"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060"></TableRow>
+        app:layout_constraintVertical_bias="0.060" />
 
     <TableRow
         android:id="@+id/second_row"
@@ -262,7 +266,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Confirmacion"
+        android:text="Confirmación"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
