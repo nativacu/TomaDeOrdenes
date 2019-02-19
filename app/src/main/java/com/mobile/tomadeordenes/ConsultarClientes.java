@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -15,11 +16,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.TextView;
 
 public class ConsultarClientes extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +46,20 @@ public class ConsultarClientes extends AppCompatActivity
         AutoCompleteTextView editText = findViewById(R.id.search_cliente);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, clientes);
         editText.setAdapter(adapter);
+
+        final TextView nameTextView = (TextView)findViewById(R.id.name_clientes_text);
+        final TextView phoneTextView = (TextView)findViewById(R.id.phone_clientes_text);
+        final TextView emailTextView = (TextView)findViewById(R.id.email_clientes_text);
+        final TextView addressTextView = (TextView)findViewById(R.id.address_clientes_text);
+        editText.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long rowId) {
+                String selection = (String)parent.getItemAtPosition(position);
+                nameTextView.setText(selection);
+                phoneTextView.setText("809-123-4567");
+                emailTextView.setText(selection + "@email.com");
+                addressTextView.setText("Test address #50");
+            }
+        });
     }
 
     @Override
@@ -67,13 +85,15 @@ public class ConsultarClientes extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_resumen) {
-            // Handle the camera action
+            Intent testIntent = new Intent(this, MainActivity.class);
+            startActivity(testIntent);
+
         } else if (id == R.id.nav_productos) {
 
         } else if (id == R.id.nav_consultar_cliente) {
 
         } else if (id == R.id.nav_ordenes) {
-
+            //do nothing
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -88,9 +108,22 @@ public class ConsultarClientes extends AppCompatActivity
         if (id == R.id.helpButton) {
 
             Intent testIntent = new Intent(this, MainActivity.class);
-
             startActivity(testIntent);
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void cancelOrder(View view) {
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void toProductSelection(View view) {
+
+        Intent intent = new Intent(this, SeleccionarProducto.class);
+        startActivity(intent);
+    }
+
+
 }
