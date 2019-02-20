@@ -86,4 +86,16 @@ public class SeleccionarProducto extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void toConsultarClientes(View view) {
+
+        Intent intent = new Intent(this, ConsultarClientes.class);
+        startActivity(intent);
+    }
+
+    public void toOrderResumen(View view) {
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }

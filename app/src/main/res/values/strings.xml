@@ -26,7 +26,8 @@
         <item>Raul5</item>
         <item>Raul6</item>
         <item>Raul7</item>
-
     </string-array>
+
+
     <string name="title_activity_seleccionar_producto">SeleccionarProducto</string>
 </resources>
