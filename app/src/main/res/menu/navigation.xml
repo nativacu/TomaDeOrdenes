@@ -9,9 +9,8 @@
         android:state_checked="false"
         app:showAsAction="never"
         android:enabled="true"
-        android:icon="@drawable/ic_home_black_24dp"
-        />
-
+        android:icon="@drawable/ic_home_black_24dp" />
+  
     <item
         android:id="@+id/navigation_ordenes"
         android:title="@string/ordenes"
