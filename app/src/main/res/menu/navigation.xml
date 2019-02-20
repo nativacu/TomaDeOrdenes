@@ -6,17 +6,17 @@
         android:id="@+id/navigation_resumen"
         android:title="@string/resumen"
         android:color="@color/colorWhite"
-        android:state_checked="true"
-        app:showAsAction="always|withText"
+        android:state_checked="false"
+        app:showAsAction="never"
         android:enabled="true"
         android:icon="@drawable/ic_home_black_24dp" />
-
+  
     <item
         android:id="@+id/navigation_ordenes"
         android:title="@string/ordenes"
         android:color="@color/colorWhite"
         android:state_checked="true"
-        app:showAsAction="always|withText"
+        app:showAsAction="always"
         android:enabled="true"
         android:icon="@drawable/ic_library_books_black_24dp"
         />
@@ -25,8 +25,8 @@
         android:id="@+id/navigation_consultar_clientes"
         android:title="@string/consultar_clientes"
         android:color="@color/colorWhite"
-        android:state_checked="true"
-        app:showAsAction="ifRoom|withText"
+        android:state_checked="false"
+        app:showAsAction="never"
         android:enabled="true"
         android:icon="@drawable/ic_assignment_ind_black_24dp"
         />
@@ -35,8 +35,8 @@
         android:id="@+id/navigation_productos"
         android:title="@string/productos"
         android:color="@color/colorWhite"
-        android:state_checked="true"
-        app:showAsAction="ifRoom|withText"
+        android:state_checked="false"
+        app:showAsAction="never"
         android:enabled="true"
         android:icon="@drawable/ic_local_shipping_black_24dp"
 
