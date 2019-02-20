@@ -6,8 +6,8 @@
         android:id="@+id/helpButton"
         android:title=""
         app:showAsAction="always"
-        android:icon="@drawable/ic_menu_send"
-        app:theme="@style/MyActionBarTheme"
+        android:icon="@drawable/ic_action_name"
+        app:theme="@style/AppTheme"
         app:itemIconTint="@color/colorWhite"
         />
 </menu>
