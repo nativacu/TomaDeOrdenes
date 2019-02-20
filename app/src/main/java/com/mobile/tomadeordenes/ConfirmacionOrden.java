@@ -14,13 +14,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class ResumenOrden extends AppCompatActivity
+public class ConfirmacionOrden extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resumen_orden);
+        setContentView(R.layout.activity_confirmacion_orden);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -47,7 +47,7 @@ public class ResumenOrden extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.resumen_orden, menu);
+        getMenuInflater().inflate(R.menu.confirmacion_orden, menu);
         return true;
     }
 
@@ -76,6 +76,7 @@ public class ResumenOrden extends AppCompatActivity
         if (id == R.id.nav_resumen) {
             Intent testIntent = new Intent(this, MainActivity.class);
             startActivity(testIntent);
+
         } else if (id == R.id.nav_productos) {
 
         } else if (id == R.id.nav_consultar_cliente) {
@@ -87,17 +88,5 @@ public class ResumenOrden extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    public void toSelectProducto(View view) {
-
-        Intent intent = new Intent(this, SeleccionarProducto.class);
-        startActivity(intent);
-    }
-
-    public void toConfirmacion(View view) {
-
-        Intent intent = new Intent(this, ConfirmacionOrden.class);
-        startActivity(intent);
     }
 }
