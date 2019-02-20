@@ -30,4 +30,6 @@
 
 
     <string name="title_activity_seleccionar_producto">SeleccionarProducto</string>
+    <string name="title_activity_resumen_orden">ResumenOrden</string>
+    <string name="title_activity_confirmacion_orden">ConfirmacionOrden</string>
 </resources>
