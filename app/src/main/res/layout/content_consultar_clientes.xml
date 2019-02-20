@@ -574,51 +574,6 @@
         app:layout_constraintTop_toTopOf="@+id/address_clientes_subtext"
         app:layout_constraintVertical_bias="0.168" />
 
-    <Button
-        android:id="@+id/cancel_button"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/holo_red_dark"
-        android:onClick="onCancelButtonPressed"
-        android:text="Cancel"
-        android:textAllCaps="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
-        android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/next_button"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_clientes"
-        app:layout_constraintVertical_bias="0.816" />
-
-    <Button
-        android:id="@+id/next_button"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/lightBlue"
-        android:text="Siguiente"
-        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
-        android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.777"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_clientes"
-        app:layout_constraintVertical_bias="0.816" />
+    
 
 </android.support.constraint.ConstraintLayout>
