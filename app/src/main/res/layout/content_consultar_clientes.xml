@@ -80,6 +80,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/search_icon_clientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:src="@drawable/ic_search_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TableRow
         android:id="@+id/first_row_clientes"
         android:layout_width="60dp"
@@ -134,6 +152,9 @@
         android:dropDownAnchor="@id/text_view_clientes"
         android:hint="@string/search_clientes"
         android:textColorLink="@color/colorAccent"
+        android:dropDownVerticalOffset="0dp"
+        android:imeOptions="actionNext"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
