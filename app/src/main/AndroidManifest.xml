@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ResumenOrden"
+            android:label="@string/title_activity_resumen_orden"
+            android:parentActivityName=".SeleccionarProducto"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mobile.tomadeordenes.SeleccionarProducto" />
+        </activity>
+        <activity
             android:name=".SeleccionarProducto"
             android:label="@string/title_activity_seleccionar_producto"
             android:parentActivityName=".ConsultarClientes"

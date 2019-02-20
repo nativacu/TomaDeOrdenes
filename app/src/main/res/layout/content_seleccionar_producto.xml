@@ -576,7 +576,7 @@
         app:menu="@menu/navigation" />
 
     <ImageView
-        android:id="@+id/producto_clientes_circle"
+        android:id="@+id/producto_resumen_circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -593,7 +593,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/resumen_clientes_circle"
+        android:id="@+id/resumen_resumen_circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -611,7 +611,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/confirmacion_clientes_circle"
+        android:id="@+id/confirmacion_resumen_circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -629,7 +629,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/cliente_clientes_circle"
+        android:id="@+id/cliente_resumen_circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -653,9 +653,9 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="32dp"
         android:background="#444"
-        app:layout_constraintEnd_toStartOf="@+id/producto_clientes_circle"
+        app:layout_constraintEnd_toStartOf="@+id/producto_resumen_circle"
         app:layout_constraintHorizontal_bias="0.58"
-        app:layout_constraintStart_toEndOf="@+id/cliente_clientes_circle"
+        app:layout_constraintStart_toEndOf="@+id/cliente_resumen_circle"
         app:layout_constraintTop_toTopOf="parent"></TableRow>
 
     <TableRow
@@ -668,8 +668,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="#444"
-        app:layout_constraintEnd_toStartOf="@+id/resumen_clientes_circle"
-        app:layout_constraintStart_toEndOf="@+id/producto_clientes_circle"
+        app:layout_constraintEnd_toStartOf="@+id/resumen_resumen_circle"
+        app:layout_constraintStart_toEndOf="@+id/producto_resumen_circle"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableRow
@@ -682,8 +682,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="#444"
-        app:layout_constraintEnd_toStartOf="@+id/confirmacion_clientes_circle"
-        app:layout_constraintStart_toEndOf="@+id/resumen_clientes_circle"
+        app:layout_constraintEnd_toStartOf="@+id/confirmacion_resumen_circle"
+        app:layout_constraintStart_toEndOf="@+id/resumen_resumen_circle"
         app:layout_constraintTop_toTopOf="parent" />
 
     <AutoCompleteTextView
